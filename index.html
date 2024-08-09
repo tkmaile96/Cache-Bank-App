@@ -42,6 +42,11 @@
             <a class="text-sm font-normal text-dark-gray-700 hover:text-dark-gray-900" href="#contact">Contact</a>
         </div> <!--End of Heading lists-->
 
+        <div class="hidden gap-8 p-4 items-center md:flex">
+            <button class="text-sm font-normal text-dark-gray-800 hover:text-dark-gray-900">Log In</button>
+            <button class="px-4 py-2 text-sm font-bold text-dark-blue bg-green-500 rounded-xl hover:bg-pink-500 ">Sign Up</button>
+         </div> <!--login and sign-up buttons-->
+
         <button class="p-4 md:hidden" id="mobile-menu-toggle">
             <svg
             fill="none"
@@ -83,10 +88,26 @@
      </div> 
  </div> <!--End of component 1-->
 
+ <!--COMPONENT 2: HERO AND ENDORSEMENT -->
 
-    <div class="w-full">
-        <!-- Wide full-width container for additional content -->
+ <!--hERO SECTION-->
+<section class="grid w-full grid-cols-1 my-auto mt-12 mb-8 md:grid-cols-2 xl:gap-14 md:gap-5">
+    <div class="flex flex-col justify-center col-span-1 text-center lg:text-start">
+        <h1>
+            The Clever Place to Keep Your Cache
+        </h1>
+
     </div>
+
+</section>
+
+
+
+
+
+
+
+
     <div class="container mx-auto">
         <!-- Centered container for more content -->
     </div>
@@ -99,6 +120,11 @@
     <div class="w-full bg-green-500">
         <!-- Full-width footer container with green background -->
     </div>
+    <script>
+        document.getElementById("mobile-menu-toggle").addEventListener("click", function() {
+            document.getElementById("mobile-menu").classList.toggle("hidden")
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/plugins/countup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/countto.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/plugins/leaflet.js"></script>
