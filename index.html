@@ -2,6 +2,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Cache Bank Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script> <!--Insatll tailwind-->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script> <!--Tailwind Config-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
@@ -12,9 +24,26 @@
     <link rel="stylesheet" href="./assets/css/loopple/loopple.css">
 </head>
 
-<body class="null">
-    <div class="container flex flex-col mx-auto">
+<body class="bg-grey-100">
+
+    <!--COMPONENT 1-->
+    <!--HEADER and NAVIGATION BAR-->
+    <div class="mx-auto bg-white">
         <!-- Main container with navigation and header content -->
+      <div class="relative flex flex-wrap items-center justify-between w-full shirk-0">
+        <div class="px-4"> <!--Image Div-->
+            <img class="h-8" src="./assets/component-1/navigation/cache-bank-logo.png" alt="">
+        </div> <!--End of img div-->
+         
+        <div class="hidden md:flex items-center justify-between text-black gap-12">
+            <a class="text-sm font-normal text-dark-gray-700 hover:text-dark-gray-900" href="#product">Product</a>
+            <a class="text-sm font-normal text-dark-gray-700 hover:text-dark-gray-900" href="#features">Feautures</a>
+            <a class="text-sm font-normal text-dark-gray-700 hover:text-dark-gray-900" href="#getStarted">Get Started</a>
+            <a class="text-sm font-normal text-dark-gray-700 hover:text-dark-gray-900" href="#contact">Contact</a>
+        </div> <!--End of Heading lists-->
+
+      </div> 
+
     </div>
     <div class="w-full">
         <!-- Wide full-width container for additional content -->
